@@ -28,6 +28,7 @@ ENV/
 
 
 # Ignored Configuration Files
+secrets/
 .env
 .vscode/
 .markdownlint.yaml
