@@ -31,21 +31,22 @@ MATCH path=(s:Supplier)-[:SUPPLIES]->(p:Product)-[:PART_OF]->(c:Category)
 WHERE c.categoryName = 'Seafood'
 RETURN path
 
-// also show the orders
-
-MATCH path=(s:Supplier)-[:SUPPLIES]->(p:Product)-[:PART_OF]->(c:Category),
-(o:Order)-[: ORDERS ]->(p)
-WHERE p.unitPrice > 200
-RETURN path
 
 // that does not show the orders
 // that does
 // use : with path, p to create a new `layer`
 MATCH path=(s:Supplier)-[:SUPPLIES]->(p:Product)-[:PART_OF]->(c:Category)
 WHERE p.unitPrice > 50
+RETURN path
+
+MATCH path=(s:Supplier)-[:SUPPLIES]->(p:Product)-[:PART_OF]->(c:Category)
+WHERE p.unitPrice > 50
 WITH path, p
 MATCH orderPath=(o:Order)-[: ORDERS ]->(p)
 RETURN path, orderPath
+
+
+
 
 // Which categories have the most expensive products?
 
@@ -78,8 +79,14 @@ LIMIT 5
 // NOT EXISTS( (p) <-[:CONTAINS]-(:Order)   )
 
 MATCH (p:Product)
-WHERE NOT EXISTS( (p)<-[: CONTAINS ]-(:Order) )
-RETURN p.productName
+WHERE NOT EXISTS( (p)<-[:ORDERS]-(:Order) )
+RETURN p.productName;
+
+
+MATCH (p:Product)
+OPTIONAL MATCH (p)<-[o:ORDERS]-()
+WHERE o IS NULL
+RETURN p.productName;
 
 // return the product category as PATH
 
@@ -92,6 +99,8 @@ RETURN path
 MATCH path=(s:Supplier)-[:SUPPLIES]->(p:Product)-[:PART_OF]->(c:Category)
 WHERE NOT EXISTS((p)<-[: CONTAINS ]-(:Order))
 RETURN path
+
+
 
 // Find all orders shipped by Speedy Express
 //  a shipper SHIPPED an order
@@ -119,7 +128,7 @@ MATCH (e:Employee)-[:REPORTS_TO]->(m:Employee { lastName: 'Fuller' })
 RETURN e.firstName, e.lastName
 
 //  using property filters on the node directly
-//  inseatd of using a where clause you can filter the node
+//  instead of using a where clause you can filter the node
 
 MATCH (o:Order)-[:ORDERS]->(p:Product)
 WHERE o.shipCity = 'London'
@@ -142,7 +151,7 @@ RETURN path
 MATCH (s:Supplier)-->(:Product)-->(c:Category)
 RETURN s.companyName AS company, collect( DISTINCT c.categoryName) AS categories
 
-//  let's create new relatinos hips
+//  let's create new relationships
 
 // `FREQUENTLY_BOUGHT_WITH`: as in belong to the same order
 
