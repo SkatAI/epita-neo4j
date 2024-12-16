@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Territory"
+  },
+  {
+    "label": "Region"
+  },
+  {
+    "label": "Supplier"
+  },
+  {
+    "label": "Shipper"
+  },
+  {
+    "label": "Product"
+  },
+  {
+    "label": "Category"
+  },
+  {
+    "label": "Order"
+  },
+  {
+    "label": "Customer"
+  },
+  {
+    "label": "Employee"
+  }
+]

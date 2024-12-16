@@ -1,0 +1,11 @@
+start_type,relationship_type,end_type,total_connections,unique_starts,unique_ends,avg_outgoing_per_start,avg_incoming_per_end
+Order,ORDERS,Product,2155,830,77,2.6,27.99
+Shipper,SHIPS,Order,830,3,830,276.67,1.0
+Customer,PURCHASED,Order,830,89,830,9.33,1.0
+Employee,SOLD,Order,830,9,830,92.22,1.0
+Supplier,SUPPLIES,Product,77,29,77,2.66,1.0
+Product,PART_OF,Category,77,77,8,1.0,9.63
+Product,FREQUENTLY_BOUGHT_WITH,Product,58,23,32,2.52,1.81
+Territory,IN_REGION,Region,53,53,4,1.0,13.25
+Employee,IN_TERRITORY,Territory,49,9,49,5.44,1.0
+Employee,REPORTS_TO,Employee,8,8,2,1.0,4.0

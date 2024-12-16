@@ -9,3 +9,13 @@ This covers :
 - Vector search
 
 This repo is a work in progress. stay tuned.
+
+
+# Datasets
+
+https://github.com/neo4j-graph-examples/stackoverflow
+https://github.com/neo4j-graph-examples/recommendations
+https://github.com/neo4j-graph-examples/legis-graph
+https://github.com/neo4j-graph-examples/pole
+https://github.com/neo4j-graph-examples/star-wars?tab=readme-ov-file
+

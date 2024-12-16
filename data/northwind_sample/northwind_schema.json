@@ -1,0 +1,272 @@
+[
+  {
+    "nodes": [
+      {
+        "identity": -169,
+        "labels": [
+          "Order"
+        ],
+        "properties": {
+          "name": "Order",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=15, name='orderID_Order_uniq', type='UNIQUENESS', schema=(:Order {orderID}), ownedIndex=14 )"
+          ]
+        },
+        "elementId": "-169"
+      },
+      {
+        "identity": -163,
+        "labels": [
+          "Territory"
+        ],
+        "properties": {
+          "name": "Territory",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=3, name='territoryID_Territory_uniq', type='UNIQUENESS', schema=(:Territory {territoryID}), ownedIndex=2 )"
+          ]
+        },
+        "elementId": "-163"
+      },
+      {
+        "identity": -168,
+        "labels": [
+          "Category"
+        ],
+        "properties": {
+          "name": "Category",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=13, name='categoryID_Category_uniq', type='UNIQUENESS', schema=(:Category {categoryID}), ownedIndex=12 )"
+          ]
+        },
+        "elementId": "-168"
+      },
+      {
+        "identity": -171,
+        "labels": [
+          "Employee"
+        ],
+        "properties": {
+          "name": "Employee",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=19, name='employeeID_Employee_uniq', type='UNIQUENESS', schema=(:Employee {employeeID}), ownedIndex=18 )"
+          ]
+        },
+        "elementId": "-171"
+      },
+      {
+        "identity": -170,
+        "labels": [
+          "Customer"
+        ],
+        "properties": {
+          "name": "Customer",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=17, name='customerID_Customer_uniq', type='UNIQUENESS', schema=(:Customer {customerID}), ownedIndex=16 )"
+          ]
+        },
+        "elementId": "-170"
+      },
+      {
+        "identity": -166,
+        "labels": [
+          "Shipper"
+        ],
+        "properties": {
+          "name": "Shipper",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=9, name='shipperID_Shipper_uniq', type='UNIQUENESS', schema=(:Shipper {shipperID}), ownedIndex=8 )"
+          ]
+        },
+        "elementId": "-166"
+      },
+      {
+        "identity": -164,
+        "labels": [
+          "Region"
+        ],
+        "properties": {
+          "name": "Region",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=5, name='regionID_Region_uniq', type='UNIQUENESS', schema=(:Region {regionID}), ownedIndex=4 )"
+          ]
+        },
+        "elementId": "-164"
+      },
+      {
+        "identity": -167,
+        "labels": [
+          "Product"
+        ],
+        "properties": {
+          "name": "Product",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=11, name='productID_Product_uniq', type='UNIQUENESS', schema=(:Product {productID}), ownedIndex=10 )"
+          ]
+        },
+        "elementId": "-167"
+      },
+      {
+        "identity": -165,
+        "labels": [
+          "Supplier"
+        ],
+        "properties": {
+          "name": "Supplier",
+          "indexes": [
+
+          ],
+          "constraints": [
+            "Constraint( id=7, name='supplierID_Supplier_uniq', type='UNIQUENESS', schema=(:Supplier {supplierID}), ownedIndex=6 )"
+          ]
+        },
+        "elementId": "-165"
+      }
+    ],
+    "relationships": [
+      {
+        "identity": -172,
+        "start": -171,
+        "end": -169,
+        "type": "SOLD",
+        "properties": {
+          "name": "SOLD"
+        },
+        "elementId": "-172",
+        "startNodeElementId": "-171",
+        "endNodeElementId": "-169"
+      },
+      {
+        "identity": -167,
+        "start": -163,
+        "end": -164,
+        "type": "IN_REGION",
+        "properties": {
+          "name": "IN_REGION"
+        },
+        "elementId": "-167",
+        "startNodeElementId": "-163",
+        "endNodeElementId": "-164"
+      },
+      {
+        "identity": -170,
+        "start": -166,
+        "end": -169,
+        "type": "SHIPS",
+        "properties": {
+          "name": "SHIPS"
+        },
+        "elementId": "-170",
+        "startNodeElementId": "-166",
+        "endNodeElementId": "-169"
+      },
+      {
+        "identity": -174,
+        "start": -171,
+        "end": -163,
+        "type": "IN_TERRITORY",
+        "properties": {
+          "name": "IN_TERRITORY"
+        },
+        "elementId": "-174",
+        "startNodeElementId": "-171",
+        "endNodeElementId": "-163"
+      },
+      {
+        "identity": -175,
+        "start": -169,
+        "end": -167,
+        "type": "ORDERS",
+        "properties": {
+          "name": "ORDERS"
+        },
+        "elementId": "-175",
+        "startNodeElementId": "-169",
+        "endNodeElementId": "-167"
+      },
+      {
+        "identity": -169,
+        "start": -167,
+        "end": -168,
+        "type": "PART_OF",
+        "properties": {
+          "name": "PART_OF"
+        },
+        "elementId": "-169",
+        "startNodeElementId": "-167",
+        "endNodeElementId": "-168"
+      },
+      {
+        "identity": -168,
+        "start": -165,
+        "end": -167,
+        "type": "SUPPLIES",
+        "properties": {
+          "name": "SUPPLIES"
+        },
+        "elementId": "-168",
+        "startNodeElementId": "-165",
+        "endNodeElementId": "-167"
+      },
+      {
+        "identity": -171,
+        "start": -170,
+        "end": -169,
+        "type": "PURCHASED",
+        "properties": {
+          "name": "PURCHASED"
+        },
+        "elementId": "-171",
+        "startNodeElementId": "-170",
+        "endNodeElementId": "-169"
+      },
+      {
+        "identity": -173,
+        "start": -171,
+        "end": -171,
+        "type": "REPORTS_TO",
+        "properties": {
+          "name": "REPORTS_TO"
+        },
+        "elementId": "-173",
+        "startNodeElementId": "-171",
+        "endNodeElementId": "-171"
+      },
+      {
+        "identity": -176,
+        "start": -167,
+        "end": -167,
+        "type": "FREQUENTLY_BOUGHT_WITH",
+        "properties": {
+          "name": "FREQUENTLY_BOUGHT_WITH"
+        },
+        "elementId": "-176",
+        "startNodeElementId": "-167",
+        "endNodeElementId": "-167"
+      }
+    ]
+  }
+]

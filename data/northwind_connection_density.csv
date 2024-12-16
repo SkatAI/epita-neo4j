@@ -1,0 +1,11 @@
+start_type,relationship_type,end_type,total_count,theoretical_max,connection_density
+Shipper,SHIPS,Order,830,2490,33.33
+Territory,IN_REGION,Region,53,212,25.0
+Product,PART_OF,Category,77,616,12.5
+Employee,SOLD,Order,830,7470,11.11
+Employee,IN_TERRITORY,Territory,49,477,10.27
+Employee,REPORTS_TO,Employee,8,81,9.88
+Supplier,SUPPLIES,Product,77,2233,3.45
+Order,ORDERS,Product,2155,63910,3.37
+Customer,PURCHASED,Order,830,75530,1.1
+Product,FREQUENTLY_BOUGHT_WITH,Product,58,5929,0.98

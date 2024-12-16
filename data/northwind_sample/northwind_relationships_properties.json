@@ -1,0 +1,74 @@
+[
+  {
+    "relationshipType": "IN_REGION",
+    "properties": [
+
+    ],
+    "count": 53
+  },
+  {
+    "relationshipType": "SUPPLIES",
+    "properties": [
+
+    ],
+    "count": 77
+  },
+  {
+    "relationshipType": "SHIPS",
+    "properties": [
+
+    ],
+    "count": 830
+  },
+  {
+    "relationshipType": "PART_OF",
+    "properties": [
+
+    ],
+    "count": 77
+  },
+  {
+    "relationshipType": "FREQUENTLY_BOUGHT_WITH",
+    "properties": [
+      "weight"
+    ],
+    "count": 58
+  },
+  {
+    "relationshipType": "ORDERS",
+    "properties": [
+      "unitPrice",
+      "quantity",
+      "discount"
+    ],
+    "count": 2155
+  },
+  {
+    "relationshipType": "PURCHASED",
+    "properties": [
+
+    ],
+    "count": 830
+  },
+  {
+    "relationshipType": "SOLD",
+    "properties": [
+
+    ],
+    "count": 830
+  },
+  {
+    "relationshipType": "REPORTS_TO",
+    "properties": [
+
+    ],
+    "count": 8
+  },
+  {
+    "relationshipType": "IN_TERRITORY",
+    "properties": [
+
+    ],
+    "count": 49
+  }
+]

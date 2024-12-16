@@ -1,0 +1,141 @@
+[
+  {
+    "labels": [
+      "Territory"
+    ],
+    "properties": [
+      "territoryID",
+      "territoryDescription"
+    ],
+    "count": 53
+  },
+  {
+    "labels": [
+      "Region"
+    ],
+    "properties": [
+      "regionID",
+      "regionDescription"
+    ],
+    "count": 4
+  },
+  {
+    "labels": [
+      "Supplier"
+    ],
+    "properties": [
+      "supplierID",
+      "companyName",
+      "contactName",
+      "contactTitle",
+      "address",
+      "city",
+      "region",
+      "postalCode",
+      "country",
+      "phone",
+      "fax",
+      "homePage"
+    ],
+    "count": 29
+  },
+  {
+    "labels": [
+      "Shipper"
+    ],
+    "properties": [
+      "companyName",
+      "phone",
+      "shipperID"
+    ],
+    "count": 3
+  },
+  {
+    "labels": [
+      "Product"
+    ],
+    "properties": [
+      "productID",
+      "productName",
+      "unitPrice",
+      "unitsInStock",
+      "unitsOnOrder",
+      "reorderLevel",
+      "discontinued"
+    ],
+    "count": 77
+  },
+  {
+    "labels": [
+      "Category"
+    ],
+    "properties": [
+      "categoryID",
+      "categoryName",
+      "description"
+    ],
+    "count": 8
+  },
+  {
+    "labels": [
+      "Order"
+    ],
+    "properties": [
+      "orderID",
+      "orderDate",
+      "requiredDate",
+      "shippedDate",
+      "freight",
+      "shipName",
+      "shipAddress",
+      "shipCity",
+      "shipRegion",
+      "shipPostalCode",
+      "shipCountry"
+    ],
+    "count": 830
+  },
+  {
+    "labels": [
+      "Customer"
+    ],
+    "properties": [
+      "companyName",
+      "contactName",
+      "contactTitle",
+      "address",
+      "city",
+      "region",
+      "postalCode",
+      "country",
+      "phone",
+      "fax",
+      "customerID"
+    ],
+    "count": 91
+  },
+  {
+    "labels": [
+      "Employee"
+    ],
+    "properties": [
+      "address",
+      "city",
+      "region",
+      "postalCode",
+      "country",
+      "employeeID",
+      "lastName",
+      "firstName",
+      "title",
+      "titleOfCourtesy",
+      "birthDate",
+      "hireDate",
+      "homePhone",
+      "extension",
+      "notes",
+      "photoPath"
+    ],
+    "count": 9
+  }
+]

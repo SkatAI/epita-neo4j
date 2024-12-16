@@ -1,0 +1,32 @@
+[
+  {
+    "relationshipType": "IN_REGION"
+  },
+  {
+    "relationshipType": "SUPPLIES"
+  },
+  {
+    "relationshipType": "PART_OF"
+  },
+  {
+    "relationshipType": "SHIPS"
+  },
+  {
+    "relationshipType": "PURCHASED"
+  },
+  {
+    "relationshipType": "SOLD"
+  },
+  {
+    "relationshipType": "REPORTS_TO"
+  },
+  {
+    "relationshipType": "IN_TERRITORY"
+  },
+  {
+    "relationshipType": "ORDERS"
+  },
+  {
+    "relationshipType": "FREQUENTLY_BOUGHT_WITH"
+  }
+]
