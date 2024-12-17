@@ -249,3 +249,7 @@ So let's switch to local
 - create new database
 - get the northwind.dump file from the github repo
 
+https://github.com/SkatAI/epita-neo4j/blob/master/data/northwind-50.dump
+
+find how to add it to the files import folder for neo4j
+
