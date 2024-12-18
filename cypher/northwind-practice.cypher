@@ -48,11 +48,11 @@ RETURN path, orderPath
 
 
 
-// Which categories have the most expensive products?
+// Price of the most expensive product by category
 
 MATCH (p:Product)-[:PART_OF]->(c:Category)
 RETURN c.categoryName, max(p.unitPrice) AS maxPrice
- ORDER BY maxPrice DESC
+ORDER BY maxPrice DESC
 
 // Find all orders shipped to London
 MATCH (o:Order)
@@ -188,6 +188,7 @@ MERGE (s)-[r:SUPPLIES_PRIMARILY]->(c)
 ```
 
 3. `SHIPS_TO_REGION`:
+
 ```cypher
 MATCH (e:Employee)-[:PROCESSED]->(:Order)-[:SHIPPED_TO]->(c:Customer)
 WITH e, c.region AS region, count(*) AS shipments
